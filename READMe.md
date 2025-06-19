@@ -21,9 +21,5 @@ Flask Framework: Robust and scalable web application built with Flask.
 Gunicorn Server: High-performance WSGI server for running Python web applications.
 Efficient: Slim Python base image minimizes overhead.
 
-HOW TO USE 
 
-docker pull monish247/ecommerce_python_image:latest   
-
-docker run -itd -p 8034:80 monish247/ecommerce_python_image:latest
 
