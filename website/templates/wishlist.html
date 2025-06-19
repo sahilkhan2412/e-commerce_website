@@ -1,0 +1,13 @@
+<h2>Your Wishlist</h2>
+{% if wishlist_items %}
+    <ul>
+        {% for item in wishlist_items %}
+            <li>
+                {{ item.product.product_name }} - ₹{{ item.product.current_price }}
+                <a href="{{ url_for('views.remove_from_wishlist', item_id=item.id) }}">Remove</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No items in wishlist.</p>
+{% endif %}
